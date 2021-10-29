@@ -1,7 +1,7 @@
 let btn = document.querySelector("#btn")
 
 btn.addEventListener("click", async function() {
-  color = btn.style.backgroundColor
+  let color = btn.style.backgroundColor
   if (color == 'red') {
     btn.style.backgroundColor = '#353535'
   }

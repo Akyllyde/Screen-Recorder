@@ -27,9 +27,11 @@ video, button{
 }
 
 video{
-  width: 90vw;
+  width: 100vw;
   height: auto;
   margin-bottom: 8vw;
+  background: conic-gradient(black 25%, white 0deg 50%, black 0deg 75%, white 0deg);
+  background-size: 10vw 10vw;
 }
 
 button{
