@@ -10,7 +10,14 @@ btn.addEventListener("click", async function() {
   }
 
   let stream = await navigator.mediaDevices.getDisplayMedia({
-    video: true
+    video: {
+        cursor: "always"
+      },
+      audio: {
+        echoCancellation: true,
+        noiseSuppression: true,
+        sampleRate: 44100
+      }
   })
 
   const mime = MediaRecorder.isTypeSupported("video/webm; codecs=vp9") ?
